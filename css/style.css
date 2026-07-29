@@ -418,3 +418,30 @@ footer a{
 footer a:hover{
     color:#9fd88f;
 }
+
+.research-map {
+
+    margin: 35px auto;
+    text-align: center;
+
+}
+
+
+.research-map img {
+
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+
+}
+
+
+.research-map figcaption {
+
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+
+}

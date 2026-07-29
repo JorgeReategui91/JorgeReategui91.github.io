@@ -1,7 +1,9 @@
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    font-family:"Arial", sans-serif;
     color:#233;
+    font-size:17px;
+    line-height:1.6;
 }
 
 nav{
@@ -74,4 +76,17 @@ section p {
 
 section{
     padding:60px 10%;
+}
+
+section h1{
+    font-size:36px;
+    color:#173F35;
+    margin-bottom:30px;
+}
+
+
+section h2{
+    font-size:26px;
+    color:#173F35;
+    margin-top:40px;
 }

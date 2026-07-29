@@ -318,3 +318,31 @@ section p{
     }
 
 }
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    background:#173F35;
+    color:#ffffff;
+    text-align:center;
+    padding:40px 10%;
+    margin-top:60px;
+}
+
+footer p{
+    text-align:center;
+    margin:10px 0;
+    max-width:none;
+}
+
+footer a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+footer a:hover{
+    color:#9fd88f;
+}

@@ -1,15 +1,20 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    color:#233;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:17px;
-    line-height:1.6;
+    line-height:1.7;
+    color:#233;
     background:#ffffff;
 }
 
-/* ===========================
-   Navigation
-=========================== */
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
 nav{
     display:flex;
@@ -17,13 +22,13 @@ nav{
     align-items:center;
     padding:20px 10%;
     background:#173F35;
-    color:#fff;
+    color:#ffffff;
 }
 
 nav h2{
     margin:0;
-    color:#fff;
     font-size:28px;
+    color:#ffffff;
 }
 
 nav ul{
@@ -39,174 +44,277 @@ nav ul li a{
     text-decoration:none;
     font-weight:600;
     font-size:17px;
-    transition:0.3s;
+    transition:0.3s ease;
 }
 
 nav ul li a:hover{
-    color:#8fd694;
+    color:#9fd88f;
 }
 
 
-/* ===========================
-   Hero Section
-=========================== */
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero{
-    height:80vh;
+
+    height:85vh;
+
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
 
     background:
-    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
     url("../images/IMG_4850.jpg");
 
     background-size:cover;
-    background-position:center;
+
+    /* Ajuste se desejar mover a imagem */
+    background-position:center center;
+
     background-repeat:no-repeat;
 
-    color:#fff;
     text-align:center;
+
+    color:#ffffff;
+
 }
 
 .hero div{
-    background:rgba(0,0,0,.25);
-    padding:40px 60px;
-    border-radius:15px;
-    max-width:900px;
+
+    max-width:1100px;
+    padding:20px;
+
 }
 
 .hero h1{
-    font-size:48px;
+
+    font-size:58px;
+    font-weight:700;
+    line-height:1.15;
+
+    margin-bottom:25px;
+
     color:#ffffff;
-    margin-bottom:20px;
-    text-shadow:2px 2px 8px rgba(0,0,0,.8);
+
+    text-shadow:
+        3px 3px 12px rgba(0,0,0,.90),
+        0px 0px 20px rgba(0,0,0,.70);
+
 }
 
 .hero p{
-    font-size:22px;
+
+    font-size:24px;
+
+    margin-bottom:40px;
+
     color:#ffffff;
-    margin-bottom:35px;
-    text-shadow:1px 1px 6px rgba(0,0,0,.8);
+
+    text-shadow:
+        2px 2px 10px rgba(0,0,0,.90);
+
 }
 
 .btn{
+
+    display:inline-block;
+
     background:#ffffff;
+
     color:#173F35;
-    padding:14px 24px;
+
     text-decoration:none;
+
+    padding:15px 28px;
+
     border-radius:8px;
+
+    font-size:18px;
+
     font-weight:bold;
-    transition:0.3s;
+
+    transition:.3s;
+
 }
 
 .btn:hover{
-    background:#8fd694;
-    color:#173F35;
+
+    background:#9fd88f;
+
+    transform:translateY(-2px);
+
 }
 
 
-/* ===========================
-   General Sections
-=========================== */
+/* =====================================================
+   CONTENT
+===================================================== */
 
 section{
+
     padding:70px 10%;
+
 }
 
 section h1{
-    font-size:38px;
+
+    font-size:40px;
+
     color:#173F35;
-    margin-bottom:30px;
+
+    margin-bottom:25px;
+
 }
 
 section h2{
+
     font-size:28px;
+
     color:#173F35;
+
     margin-top:45px;
+
     margin-bottom:20px;
+
 }
 
 section p{
+
     text-align:justify;
-    line-height:1.9;
+
     max-width:950px;
+
+    line-height:1.9;
+
     margin-bottom:18px;
+
 }
 
 
-/* ===========================
-   About Images
-=========================== */
+/* =====================================================
+   ABOUT IMAGES
+===================================================== */
 
 .about-images{
+
     display:flex;
+
     justify-content:center;
-    gap:30px;
+
+    gap:35px;
+
     flex-wrap:wrap;
+
     margin:40px 0;
+
 }
 
 .about-images img{
-    width:380px;
+
+    width:420px;
+
     max-width:100%;
+
     border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.about-images img:hover{
+
+    transform:scale(1.02);
+
 }
 
 
-/* ===========================
-   Responsive Design
-=========================== */
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 
 @media (max-width:900px){
 
     nav{
+
         flex-direction:column;
+
         gap:20px;
+
     }
 
     nav ul{
+
         flex-wrap:wrap;
+
         justify-content:center;
+
     }
 
     .hero{
-        height:70vh;
-    }
 
-    .hero div{
-        padding:25px;
-        margin:20px;
+        height:75vh;
+
+        padding:20px;
+
     }
 
     .hero h1{
-        font-size:34px;
+
+        font-size:38px;
+
     }
 
     .hero p{
-        font-size:18px;
+
+        font-size:19px;
+
+    }
+
+    .btn{
+
+        font-size:16px;
+
+        padding:12px 22px;
+
     }
 
     section{
+
         padding:50px 8%;
+
     }
 
     section h1{
-        font-size:30px;
+
+        font-size:32px;
+
     }
 
     section h2{
+
         font-size:24px;
+
     }
 
     .about-images{
+
         flex-direction:column;
+
         align-items:center;
+
     }
 
     .about-images img{
+
         width:90%;
+
     }
 
 }

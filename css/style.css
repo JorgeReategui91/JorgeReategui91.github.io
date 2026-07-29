@@ -108,3 +108,19 @@ section h2{
     color:#fff;
     text-align:center;
 }
+
+.about-images{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:30px 0 40px 0;
+}
+
+.about-images img{
+    width:380px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+

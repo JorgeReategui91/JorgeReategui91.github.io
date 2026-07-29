@@ -343,6 +343,78 @@ footer a{
     transition:0.3s;
 }
 
+/* Gallery layout */
+
+.gallery-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+
+}
+
+
+.gallery-grid figure {
+
+    margin: 0;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+
+}
+
+
+
+.gallery-grid img {
+
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+
+
+.gallery-grid figcaption {
+
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: center;
+    color: #555;
+
+}
+
+
+
+/* Responsividade para telas menores */
+
+@media (max-width: 900px) {
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+}
+
+
 footer a:hover{
     color:#9fd88f;
 }
